@@ -1,4 +1,4 @@
-FROM python:alpine3.10 as builder
+FROM python:alpine3.19 as builder
 
 RUN apk update \
  && apk add --no-cache git unzip groff build-base libffi-dev cmake
