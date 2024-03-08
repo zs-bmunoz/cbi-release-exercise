@@ -6,6 +6,8 @@ We will evaluate the exercise in a meeting with you, where you will explain the 
 
 In that way, we will be able to evaluate your knowledge, attention to detail, and way of thinking, going beyond the result of the exercise.
 
+If you are able to make it running in a CI tool, you should prove during the meeting.
+
 
 ## Exercise
 
@@ -18,7 +20,7 @@ Create a CI pipeline that:
 
 ### Notes
 
-- Take your fork as the main repository to be able to manage it as an administrator
+- Take your fork as the main repository to be able to manage it as an administrator. If you are using other repository management tool, please import this repository there.
 - It is essential to justify the decisions made regarding the developed pipeline as well as the tools used to demonstrate its operation.
 - Feel free to update the Dockerfile if you consider some changes are needed to improve security detection
 - You can rely on continuous integration tools
