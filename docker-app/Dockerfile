@@ -6,23 +6,23 @@ ENV YQ_VERSION="v4.42.1"
 # Update and install required packages
 RUN apk update \
  && apk add --no-cache \
-    git="2.34.2-r0" \
+    git="2.44.0-r0" \
     unzip="6.0-r9" \
-    groff="1.22.4-r1" \
+    groff="1.23.0-r2" \
     build-base="0.5-r2" \
-    libffi-dev="3.4.2-r1" \
-    cmake="3.22.1-r0" \
-    jq="1.6-r1" \
-    curl="7.80.0-r1" \
-    openssh="8.8_p1-r0" \
-    gnupg="2.2.31-r0" \
-    py3-pip="20.3.4-r1"
+    libffi-dev="3.4.6-r0" \
+    cmake="3.28.3-r0" \
+    jq="1.7.1-r0" \
+    curl="8.6.0-r0" \
+    openssh="9.7_p1-r0" \
+    gnupg="2.4.4-r0" \
+    py3-pip="24.0-r0"
 
 # Install python packages
 RUN pip install --no-cache-dir \
-    deepdiff=="5.7.0" \
-    tabulate=="0.8.9" \
-    gitpython=="3.1.24"
+    deepdiff=="6.7.1" \
+    tabulate=="0.9.0" \
+    gitpython=="3.1.42"
 
 # Install yq
 RUN curl -LO "https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/yq_linux_amd64" \
