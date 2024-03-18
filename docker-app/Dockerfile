@@ -1,4 +1,4 @@
-FROM python:alpine3.18 as builder
+FROM python:alpine3.17 as builder
 
 # Set tools versions
 ENV YQ_VERSION=latest
