@@ -6,25 +6,33 @@ We will evaluate the exercise in a meeting with you, where you will explain the 
 
 In that way, we will be able to evaluate your knowledge, attention to detail, and way of thinking, going beyond the result of the exercise.
 
-If you are able to make it running in a CI tool, you should prove during the meeting.
+If you are able to make it running in Jenkins, you should prove during the meeting.
+
+This is quite open exercise, please be sure you are introduced all the complexity that will allow us evaluate your knowledge.
 
 
 ## Exercise
 
-Create a CI pipeline that:
+Create a Jenkins CI pipeline that:
 
-- Check the integrity of the changes to be introduced in this repository (just contains the exercise folder with a Dockerfile)
-- Make available a report of the vulnerabilities that are introduced. Trivy is an option, but not mandatory, feel free to use the tool you consider
-- Do not allow introduce changes if new HIGH or Critical Vulnerability are part of the new code
-- Report new vulnerabilities
+1. Check the integrity of the changes to be introduced in this repository (just contains the exercise folder with a Dockerfile). Please take into account
+	- Gitflow definition (please share the definition)
+	- Release genetation
+	- feature/develop/main branches
+	- pull request vs branches
+2. Make available a report of the vulnerabilities that are introduced.
+3. Do not allow introduce changes if new HIGH or Critical Vulnerability are part of the new code
+4. Report new vulnerabilities easy to tack and follow up by corresponding teams.
+5. Make the pipeline works on Jenkins with different use cases (mentiones on the exercise and other that are common as part of a release process)
 
 ### Notes
 
+- Trivy is an option, but not mandatory, feel free to use the tool you consider or you are more familiar with.
 - Take your fork as the main repository to be able to manage it as an administrator. If you are using other repository management tool, please import this repository there.
 - It is essential to justify the decisions made regarding the developed pipeline as well as the tools used to demonstrate its operation.
 - Feel free to update the Dockerfile if you consider some changes are needed to improve security detection
 - You can rely on continuous integration tools
-- The repository that you will work on will be shared with the interviewers at least after the interview
+- The repository that you will work on will be shared with the interviewers at least one day before the interview
 - Execute the pipeline during the interview to demonstrate its functionality and consistency in case you have reached a functional solution
 
 
